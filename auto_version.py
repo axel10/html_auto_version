@@ -7,7 +7,7 @@ def file_extension(path):
     return os.path.splitext(path)[1]
 
 
-basePath = "D:\\auto_version\\html"
+basePath = "D:\\VCsite\\html"
 html_list = []
 
 
@@ -25,7 +25,7 @@ def find_html(path):
 
 def deal_html(html_list):
     for html_path in html_list:
-        html_file = open(html_path, "r+")
+        html_file = open(html_path, "r+", encoding='UTF-8')
         content = html_file.read()
         # print(html_file.read())
         # res = re.sub(r'<link (.*) href="(.*)\.css".*>',r'<link \1 href="\2\.css?v=1"\3>',content)

@@ -6,7 +6,7 @@ import uuid
 def file_extension(path):
     return os.path.splitext(path)[1]
 
-
+# 这里写要处理的html文件的目录，支持多层
 basePath = "D:\\VCsite\\html"
 html_list = []
 
